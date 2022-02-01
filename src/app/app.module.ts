@@ -6,6 +6,8 @@ import { SocialFooter } from './navigation/social.footer.component';
 import { AppComponent } from './app.component';
 import { carousel } from './components/carousel.component';
 import { horizontalcard1 } from './components/horizontalcard1.component';
+import { horizontalcard2 } from './components/horizontalcard2.component';
+import { horizontalcard3 } from './components/horizontalcard3.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { horizontalcard1 } from './components/horizontalcard1.component';
     footer,
     SocialFooter,
     carousel,
-    horizontalcard1
+    horizontalcard1,
+    horizontalcard2,
+    horizontalcard3
   ],
   imports: [
     BrowserModule
