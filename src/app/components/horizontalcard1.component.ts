@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: 'cr-horizontalcard1',
@@ -7,5 +7,16 @@ import { Component } from "@angular/core";
 })
 
 export class horizontalcard1{
+    @Input() image: string;
+    @Input() title: string;
+    @Input() author: string;
+    @Input() description: string; 
 
+    constructor(){
+        this.image = "";
+        this.title = "";
+        this.author = "";
+        this.description = "Missing description";
+        
+    }
 }
