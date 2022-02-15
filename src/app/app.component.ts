@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { mock_list } from './components/latest_news_mock_list';
+import { latest_news_mock_list } from './components/latest_news_mock_list';
 import { LatestNewsModel } from './components/latest_news_model';
 
 @Component({
@@ -12,7 +12,7 @@ export class AppComponent {
   LatestNews: LatestNewsModel [] = [];
 
   constructor(){
-    for(var LatestNews of mock_list ){
+    for(var LatestNews of latest_news_mock_list){
       console.log(LatestNews);
       this.LatestNews.push(LatestNews);
     }

@@ -1,4 +1,4 @@
-export const mock_list =[
+export const latest_news_mock_list =[
     {
         image:"assets/crunchyroll-default-logo.png",
         title: "This February, We're Highlighting Black Voices in the Anime Industry (Part 3)",
