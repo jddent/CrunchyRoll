@@ -8,6 +8,7 @@ import { carousel } from './components/carousel.component';
 import { horizontalcard1 } from './components/horizontalcard1.component';
 import { horizontalcard2 } from './components/horizontalcard2.component';
 import { horizontalcard3 } from './components/horizontalcard3.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { horizontalcard3 } from './components/horizontalcard3.component';
     horizontalcard3
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
