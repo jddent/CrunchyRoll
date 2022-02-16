@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { latest_news_mock_list } from './components/latest_news_mock_list';
 import { LatestNewsModel } from './components/latest_news_model';
+import { verticalcard } from './components/vertical_card';
 
 @Component({
   selector: 'app-root',
