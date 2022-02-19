@@ -3,12 +3,16 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ShowsLayoutComponent } from './components/shows-layout.component';
 import { HomeLayoutComponent } from './components/home-layout.component';
+import { MangaLayoutComponent } from './components/manga-layout.component';
+import { NewsLayoutComponent } from './components/news-layout.component';
 
 
 const routes: Routes = [
   {path: '', component: HomeLayoutComponent},
   {path: 'Shows', component: ShowsLayoutComponent},
-  {path: 'home', component: HomeLayoutComponent}
+  {path: 'Home', component: HomeLayoutComponent},
+  {path: 'Manga', component: MangaLayoutComponent},
+  {path: 'News', component: NewsLayoutComponent}
 ]
 
 @NgModule({

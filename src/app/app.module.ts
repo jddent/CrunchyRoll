@@ -9,8 +9,11 @@ import { horizontalcard1 } from './components/horizontalcard1.component';
 import { horizontalcard2 } from './components/horizontalcard2.component';
 import { horizontalcard3 } from './components/horizontalcard3.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ShowsLayoutComponent } from './components/shows-layout.component';
 import { HomeLayoutComponent } from './components/home-layout.component';
+import { MangaLayoutComponent } from './components/manga-layout.component';
+import { NewsLayoutComponent } from './components/news-layout.component';
+import { VerticalCard } from './components/verticalcard.component';
+import { LayoutNavBar } from './navigation/layoutnavbar.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +25,11 @@ import { HomeLayoutComponent } from './components/home-layout.component';
     horizontalcard1,
     horizontalcard2,
     horizontalcard3,
-    ShowsLayoutComponent,
-    HomeLayoutComponent
+    HomeLayoutComponent,
+    NewsLayoutComponent,
+    MangaLayoutComponent,
+    VerticalCard,
+    LayoutNavBar
   ],
   imports: [
     BrowserModule,
