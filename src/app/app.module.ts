@@ -9,6 +9,8 @@ import { horizontalcard1 } from './components/horizontalcard1.component';
 import { horizontalcard2 } from './components/horizontalcard2.component';
 import { horizontalcard3 } from './components/horizontalcard3.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ShowsLayoutComponent } from './components/shows-layout.component';
+import { HomeLayoutComponent } from './components/home-layout.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { AppRoutingModule } from './app-routing.module';
     carousel,
     horizontalcard1,
     horizontalcard2,
-    horizontalcard3
+    horizontalcard3,
+    ShowsLayoutComponent,
+    HomeLayoutComponent
   ],
   imports: [
     BrowserModule,

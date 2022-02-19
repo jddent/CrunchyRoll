@@ -1,17 +1,6 @@
 <cr-topnavbar>Loading...</cr-topnavbar>
 
-<div class = "container">
-<cr-carousel>Loading...</cr-carousel>
-<div><h3>Latest News</h3></div>
-
-  <div class = "container">
-    <div *ngFor="let LatestNews of LatestNews">
-      <cr-horizontalcard1 image={{LatestNews.image}} title={{LatestNews.title}} author={{LatestNews.author}} description={{LatestNews.description}}>Loading...</cr-horizontalcard1>
-    </div>
-  </div>
-</div>
-
-
+<router-outlet></router-outlet>
 
   <cr-footer>Loading...</cr-footer>
   <cr-social-footer>Loading...</cr-social-footer>

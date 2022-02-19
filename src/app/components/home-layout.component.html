@@ -1,0 +1,19 @@
+<div class = "container">
+    <div class ="row">
+        <div class = "col-sm">
+            <cr-carousel>Loading...</cr-carousel>
+        </div>
+    <cr-horizontalcard2 class = "col-md-4">Loading...</cr-horizontalcard2>
+</div>
+  <div><h3>Latest News</h3></div>
+  
+    <div class = "container">
+      <div *ngFor="let LatestNews of LatestNews">
+        <cr-horizontalcard1 image={{LatestNews.image}} title={{LatestNews.title}} author={{LatestNews.author}} description={{LatestNews.description}}>Loading...</cr-horizontalcard1>
+      </div>
+    <div><h3>Site News</h3></div>
+    <div *ngFor="let LatestNews of LatestNews">
+      <cr-horizontalcard1 image={{LatestNews.image}} title={{LatestNews.title}} author={{LatestNews.author}} description={{LatestNews.description}}>Loading...</cr-horizontalcard1>
+    </div>
+    </div>
+  </div>
