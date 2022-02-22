@@ -2,11 +2,20 @@ This is the Manga layout
 
 <div class = "container">
     <cr-layoutnavbar>Loading...</cr-layoutnavbar>
-    <div class = "col-md-8">
-        <div class ="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
-            <div *ngFor="let PopularManga of PopularManga">
-              <cr-display-different-shows image={{PopularManga.image}} title={{PopularManga.title}}>Loading...</cr-display-different-shows>
+    <div class="row">
+        <div class = "col-md-8">
+            <div class ="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+                <div *ngFor="let PopularManga of PopularManga">
+                <cr-display-different-shows image={{PopularManga.image}} title={{PopularManga.title}}>Loading...</cr-display-different-shows>
+                </div>
             </div>
+        </div>
+        <div class="col-md-4">
+            <cr-horizontalcard3 title="Crunchyroll Manga app available on your iPhone or Android!" description="Download Crunchyroll Manga app on your phone and enjoy latest simulpubs!">
+                Loading...</cr-horizontalcard3>
+            <cr-horizontalcard3 title="Crunchyroll Manga Forum" description="Talk about your favorite manga and get the latest information!">Loading...</cr-horizontalcard3>
+            <cr-horizontalcard3 title="Follow Crunchyroll" description="Get the latest updates on show information, news, and more.">Loading...</cr-horizontalcard3>
+            <cr-horizontalcard3 title="Coming Soon">Loading...</cr-horizontalcard3>
         </div>
     </div>
 </div>
