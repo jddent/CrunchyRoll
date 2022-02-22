@@ -3,7 +3,10 @@ This is the Manga layout
 <div class = "container">
     <cr-layoutnavbar>Loading...</cr-layoutnavbar>
     <div class = "col-md-8">
-     <cr-display-different-shows>Loading...</cr-display-different-shows>
-     
+        <div class ="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+            <div *ngFor="let PopularManga of PopularManga">
+              <cr-display-different-shows image={{PopularManga.image}} title={{PopularManga.title}}>Loading...</cr-display-different-shows>
+            </div>
+        </div>
     </div>
 </div>
