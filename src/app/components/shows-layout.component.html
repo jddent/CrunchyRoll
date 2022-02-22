@@ -1,2 +1,29 @@
-This is the shows layout component.
 
+<div class = "container">
+    <cr-showsnavbar>Loading...</cr-showsnavbar>
+<div class="row">
+    <div class = "col-md-8">
+        <div class ="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+            <div *ngFor="let PopularShows of PopularShows">
+                <cr-display-different-shows image={{PopularShows.image}} title={{PopularShows.title}}>Loading...</cr-display-different-shows>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <cr-horizontalcard3 title="Try Free Trial" description="No ads, full HD videos to your desktop, TV, and mobile devices.">Loading...</cr-horizontalcard3>
+        <cr-horizontalcard3 title="This Season's Lineup" description="See new and continuing simulcast titles for this season! You can also check out the release calendar for specific dates.">
+            Loading...</cr-horizontalcard3>
+        <cr-horizontalcard3 title="Search by Genres" description="Looking for something more specific? Try searching by genres.">Loading...</cr-horizontalcard3>
+        <cr-horizontalcard3 title="Follow Crunchyroll" description="Get the latest updates on show information, news, and more.">Loading...</cr-horizontalcard3>
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
