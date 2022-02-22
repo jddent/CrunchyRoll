@@ -8,7 +8,7 @@ export const news_mock_list=[
     time: "February 22, 2022 12:12pm EST"
     },
     {
-        image: "assets/crunchyroll-default-logo.png",
+        image: "assets/news-1.png",
         title: "FEATURE: What Makes An Anime Opening Great?",
         subtitle: "Let's explore how an opening can truly enrich a great show!",
         author: "Nick Creamer",
