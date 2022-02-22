@@ -14,6 +14,7 @@ import { MangaLayoutComponent } from './components/manga-layout.component';
 import { NewsLayoutComponent } from './components/news-layout.component';
 import { VerticalCard } from './components/verticalcard.component';
 import { LayoutNavBar } from './navigation/layoutnavbar.component';
+import { DisplayDifferentShowsComponent } from './components/display-different-shows/display-different-shows.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,9 @@ import { LayoutNavBar } from './navigation/layoutnavbar.component';
     NewsLayoutComponent,
     MangaLayoutComponent,
     VerticalCard,
-    LayoutNavBar
+    LayoutNavBar,
+    DisplayDifferentShowsComponent
+
   ],
   imports: [
     BrowserModule,
