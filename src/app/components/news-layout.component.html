@@ -1,1 +1,7 @@
 This is a news layout
+<div class = "container">
+    <cr-newsnavbar>Loading...</cr-newsnavbar>
+    <div *ngFor="let News of News">
+        <cr-newshorizontalcard title={{News.title}} subtitle={{News.subtitle}} author={{News.author}} description={{News.description}} time={{News.time}} image={{News.image}}></cr-newshorizontalcard>
+    </div>
+</div>

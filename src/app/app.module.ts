@@ -18,6 +18,7 @@ import { DisplayDifferentShowsComponent } from './components/display-different-s
 import { ShowsNavBar } from './navigation/showsnavbar.component';
 import { ShowsLayoutComponent } from './components/shows-layout.component';
 import { NewsNavBar } from './navigation/newsnavbar.component';
+import { NewsHorizontalCard } from './components/newshorizontalcard.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { NewsNavBar } from './navigation/newsnavbar.component';
     DisplayDifferentShowsComponent,
     ShowsNavBar,
     ShowsLayoutComponent,
-    NewsNavBar
+    NewsNavBar,
+    NewsHorizontalCard
 
   ],
   imports: [
