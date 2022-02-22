@@ -19,6 +19,7 @@ import { ShowsNavBar } from './navigation/showsnavbar.component';
 import { ShowsLayoutComponent } from './components/shows-layout.component';
 import { NewsNavBar } from './navigation/newsnavbar.component';
 import { NewsHorizontalCard } from './components/newshorizontalcard.component';
+import { NewsSearchBar } from './navigation/newssearchbar.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { NewsHorizontalCard } from './components/newshorizontalcard.component';
     ShowsNavBar,
     ShowsLayoutComponent,
     NewsNavBar,
-    NewsHorizontalCard
+    NewsHorizontalCard,
+    NewsSearchBar
 
   ],
   imports: [
