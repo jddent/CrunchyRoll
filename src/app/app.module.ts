@@ -21,6 +21,7 @@ import { NewsNavBar } from './navigation/newsnavbar.component';
 import { NewsHorizontalCard } from './components/newshorizontalcard.component';
 import { NewsSearchBar } from './navigation/newssearchbar.component';
 import { UserInfoComponent } from './user-info/user-info.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { UserInfoComponent } from './user-info/user-info.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
