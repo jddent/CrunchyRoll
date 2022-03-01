@@ -1,1 +1,9 @@
-<p>user-info works!</p>
+<p *ngIf="myInfo == undefined">Failed to fetch user data</p>
+
+<div *ngIf="myInfo != undefined" class="container-fluid">
+    <div class = "row">
+        <div class = "col-3">
+            User: {{myInfo.FirstName}}
+        </div>
+    </div>
+</div>
