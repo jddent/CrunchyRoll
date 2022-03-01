@@ -3,7 +3,11 @@
 <div *ngIf="myInfo != undefined" class="container-fluid">
     <div class = "row">
         <div class = "col-3">
-            User: {{myInfo.FirstName}}
+            User: {{myInfo.FirstName}} {{myInfo.LastName}}
+        </div>
+        <div class = "col-6">
+            <a href="#" class="link">{{myInfo.Github}}</a>
+            <p>{{myInfo.mix_id}}</p>
         </div>
     </div>
 </div>

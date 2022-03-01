@@ -1,24 +1,25 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { UserInfo } from './user-info.model';
 
-
+@Injectable()
 @Component({
   selector: 'cr-user-info',
-  templateUrl: './user-info.component.html',
-  styleUrls: ['./user-info.component.css']
+  templateUrl: 'user-info.component.html',
+  styleUrls: ['user-info.component.css']
 })
 
-export class UserInfoComponent implements OnInit {
+export class UserInfoComponent implements OnInit{
   myInfo: UserInfo | undefined;
 
 
-  constructor(private http: HttpClient) { 
+  constructor(private http: HttpClient) {
 
-  }
+   }
 
   ngOnInit(): void {
     console.log("Sending request to server");
+    this.getUserInfo();
     this.showUserInfo();
   }
 
@@ -32,5 +33,4 @@ export class UserInfoComponent implements OnInit {
       this.myInfo = data;
     })
   }
-  
 }
