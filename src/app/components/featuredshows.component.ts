@@ -6,14 +6,15 @@ import { Component, Input } from "@angular/core";
     styleUrls: ['featuredshows.component.css']
 })
 
-export class horizontalcard2{
+export class featuredshows{
     @Input() image: string;
     @Input() title: string;
+    @Input() videos: number;
 
     constructor(){
-        this.image = "";
-        this.title = "";
-       
+        this.image = "...";
+        this.title = "...";
+        this.videos = 0;
         
     }
 
