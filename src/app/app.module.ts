@@ -6,7 +6,7 @@ import { SocialFooter } from './navigation/social.footer.component';
 import { AppComponent } from './app.component';
 import { carousel } from './components/carousel.component';
 import { horizontalcard1 } from './components/horizontalcard1.component';
-import { horizontalcard2 } from './components/horizontalcard2.component';
+import { horizontalcard2 } from './components/featuredshows.component';
 import { horizontalcard3 } from './components/horizontalcard3.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeLayoutComponent } from './components/home-layout.component';
