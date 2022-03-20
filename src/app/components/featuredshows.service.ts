@@ -1,20 +1,19 @@
-import { HttpClient } from "@angular/common/http";
+
 import { Injectable } from "@angular/core";
 import { FeaturedShowsModel } from "./featured_shows_model";
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Injectable({
     providedIn: 'root'
 })
 
 export class FeaturedShowsService{
-    private baseURL:string = "https://crunchyroll-6a332-default-rtdb.firebaseio.com/";
-    private featuredShowsEndpoint:string = "featuredshows.json";
-
-    constructor(private http:HttpClient) {
+   
+    constructor(private db:AngularFireDatabase) {
 
     }
 
     public getFeaturedShows() {
-        return this.http.get<FeaturedShowsModel []>(this.baseURL + this.featuredShowsEndpoint);
+        return this.db.list<FeaturedShowsModel>("featuredshows").valueChanges();
     }
 }
