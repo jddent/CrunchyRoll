@@ -1,0 +1,15 @@
+Main Features:
+- Deployed Web Application with Firebase.
+- Added the Firebase library to the CrunchyRoll project.
+- Added the Angular Fire library into the app.module.ts.
+- Removed the HTTP Client from latestnews.service.ts.
+- Added the AngularFireDatabase into the latestnews.service.ts to retrieve the latest news from the database.
+
+Bonus Features:
+- Removed the HTTP client from featuredshows.service.ts.
+- Added the AngularFireDatabase into the featuredshows.service.ts
+- Created SignInLayout to components so that the user can have access to creating an account
+    and log in as an option.
+- Added routing for SignInLayout to the app-routing-module.ts
+
+
