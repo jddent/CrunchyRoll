@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "crunchyroll-6a332"
+  },
+  "targets": {
+    "crunchyroll-6a332": {
+      "hosting": {
+        "crunchyroll": [
+          "crunchyroll-6a332"
+        ]
+      }
+    }
+  }
+}

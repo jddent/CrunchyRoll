@@ -1,20 +1,18 @@
-import { HttpClient } from "@angular/common/http";
+
 import { Injectable } from "@angular/core";
 import { LatestNewsModel } from "./latest_news_model";
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Injectable({
     providedIn: 'root'
 })
 
 export class LatestNewsService{
-    private baseURL:string = "https://crunchyroll-6a332-default-rtdb.firebaseio.com/";
-    private LatestNewsEndpoint:string = "latestnews.json";
-
-    constructor(private http:HttpClient) {
+    constructor(private db: AngularFireDatabase) {
 
     }
 
     public getLatestNews() {
-        return this.http.get<LatestNewsModel []>(this.baseURL + this.LatestNewsEndpoint);
+        return this.db.list<LatestNewsModel>("latestnews").valueChanges();
     }
 }
