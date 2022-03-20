@@ -5,6 +5,7 @@ import { ShowsLayoutComponent } from './components/shows-layout.component';
 import { HomeLayoutComponent } from './components/home-layout.component';
 import { MangaLayoutComponent } from './components/manga-layout.component';
 import { NewsLayoutComponent } from './components/news-layout.component';
+import { SignInLayoutComponent } from './components/sign-in-layout/sign-in-layout.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'Shows', component: ShowsLayoutComponent},
   {path: 'Home', component: HomeLayoutComponent},
   {path: 'Manga', component: MangaLayoutComponent},
-  {path: 'News', component: NewsLayoutComponent}
+  {path: 'News', component: NewsLayoutComponent},
+  {path: 'Login', component: SignInLayoutComponent}
 ]
 
 @NgModule({

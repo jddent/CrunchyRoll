@@ -25,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { SignInLayoutComponent } from './components/sign-in-layout/sign-in-layout.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     NewsNavBar,
     NewsHorizontalCard,
     NewsSearchBar,
-    UserInfoComponent
+    UserInfoComponent,
+    SignInLayoutComponent
 
   ],
   imports: [
