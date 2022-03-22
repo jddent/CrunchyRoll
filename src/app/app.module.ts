@@ -26,6 +26,8 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { SignInLayoutComponent } from './components/sign-in-layout/sign-in-layout.component';
+import { AddFeaturedShowsComponent } from './add-featured-shows/add-featured-shows.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -49,13 +51,15 @@ import { SignInLayoutComponent } from './components/sign-in-layout/sign-in-layou
     NewsHorizontalCard,
     NewsSearchBar,
     UserInfoComponent,
-    SignInLayoutComponent
+    SignInLayoutComponent,
+    AddFeaturedShowsComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule
   ],

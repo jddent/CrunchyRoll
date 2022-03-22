@@ -16,4 +16,8 @@ export class FeaturedShowsService{
     public getFeaturedShows() {
         return this.db.list<FeaturedShowsModel>("featuredshows").valueChanges();
     }
+
+    addShow(show : FeaturedShowsModel){
+        this.db.list<FeaturedShowsModel>("featuredshows").push(show);
+    }
 }
