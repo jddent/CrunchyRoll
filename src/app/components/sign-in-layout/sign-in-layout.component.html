@@ -1,19 +1,62 @@
-<p>sign-in-layout works!</p>
+
 <div class="container">
-<form>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+  <div class="row">
+      <div class="col-8">
+        <h3>Create account</h3>
+        <form #postForm="ngForm" (ngSubmit)="addAccountInfo(postForm.value)">
+              <div class="input-group-text" >
+                  <span class="input-group-text">
+                    Email Address:
+                   </span>
+                   <input type="text" class="form-control" ngModel name="email">
+               </div>
+               <div class="input-group-text">
+                  <span class="input-group-text">
+                   User Name:
+                  </span>
+                  <input type="text" class="form-control" ngModel name="username">
+               </div>
+
+                <div class="input-group-text">
+                  <span class="input-group-text">
+                        Password:
+                    </span>
+                   <input type="text" class="form-control" ngModel name="password">
+               </div>
+
+                   <div>
+                     <button type="submit" class="btn btn-primary">Create Account</button>
+                   </div> 
+
+                   <p>by creating an account you're agree to our Terms & Privacy Policy, and you confirm that you are at least 16 years old.</p>
+
+          </form>
+          
+      </div>
+
+      <div class="class col-4">
+        <h3>Log In</h3>
+        <p>Already have an account?</p>
+        <form action="" class="action">
+          <div class="input-group-text" >
+            <span class="input-group-text">
+              Email or Username:
+             </span>
+             <input type="text" class="form-control" ngModel name="image">
+         </div>
+         <div class="input-group-text" >
+          <span class="input-group-text">
+            Password:
+           </span>
+           <input type="text" class="form-control" ngModel name="image">
+       </div>
+
+       <div>
+        <button type="submit" class="btn btn-primary">Log In</button>
+      </div> 
+
+      <p> Trouble logging in? Make sure browser cookies and JavaScript are enabled.</p>
+        </form>
+      </div>
+  </div>
 </div>
