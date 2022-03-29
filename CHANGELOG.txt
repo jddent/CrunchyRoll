@@ -1,15 +1,20 @@
 Main Features:
-- Deployed Web Application with Firebase.
-- Added the Firebase library to the CrunchyRoll project.
-- Added the Angular Fire library into the app.module.ts.
-- Removed the HTTP Client from latestnews.service.ts.
-- Added the AngularFireDatabase into the latestnews.service.ts to retrieve the latest news from the database.
+- Set up an admin page for featured shows called add-featured-shows.
+- Added routing to the admin page on app-routing.module.ts
+- Created a form layout on add-featured-shows.component.html.
+- Added the addShow method on add-featured-shows.component.ts.
+- Enabled the backend to receive information from addShow method in add-featured-shows.component.ts
+- Added the FeatruedShowsModel to the add-featured-shows.component.ts so that the the html can grab the information necessary from the moodel.
+- Added all of the ngModel commands to the form to enable information to be sent to the backend.
 
 Bonus Features:
-- Removed the HTTP client from featuredshows.service.ts.
-- Added the AngularFireDatabase into the featuredshows.service.ts
-- Created SignInLayout to components so that the user can have access to creating an account
-    and log in as an option.
-- Added routing for SignInLayout to the app-routing-module.ts
+- Added a form layout to sign-in-layout.
+- Created a form for create an account on sign-in-layout.component.html.
+- Created a form for login to an account on sign-in-layout.component.html.
+- Created accountinfo in the firebase realtime database to accept account information.
+- Created a create_account_model.ts.
+- Created a create_account.service.ts.
+- Added the service and model to the sign-in-layout component. 
+- Sign-in-layout component can now take information from the form and store it into the backend.
 
 
