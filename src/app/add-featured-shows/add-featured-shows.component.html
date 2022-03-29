@@ -2,29 +2,31 @@
 <div class="container">
     <div class="row">
         <div class="col-8">
-            <form #postForm="ngForm" (ngsubmit)="addShow(postForm.value)">
-
+            <form #postForm="ngForm" (ngSubmit)="addShow(postForm.value)">
                 <div class="input-group-text" >
                     <span class="input-group-text">
                         Image Path:
-                    </span>
-                    <input type="text" class="form-control" ngModel name="image">
-                </div>
-                <div class="input-group-text">
+                     </span>
+                     <input type="text" class="form-control" ngModel name="image">
+                 </div>
+
+                 <div class="input-group-text">
                     <span class="input-group-text">
-                        Title:
+                     Title:
                     </span>
                     <input type="text" class="form-control" ngModel name="title">
-                </div>
-                <div class="input-group-text">
-                    <span class="input-group-text">
-                        Episodes:
-                    </span>
-                    <input type="text" class="form-control" ngModel name="videos">
-                </div>
-                <div>
-                    <button type="submit" class="btn btn-primary">Add Show</button>
                  </div>
+
+                  <div class="input-group-text">
+                    <span class="input-group-text">
+                            Episodes:
+                      </span>
+                     <input type="text" class="form-control" ngModel name="videos">
+                 </div>
+
+                     <div>
+                       <button type="submit" class="btn btn-primary">Add Show</button>
+                     </div> 
             </form>
         </div>
     </div>

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FeaturedShowsService } from '../components/featuredshows.service';
-
 import { FeaturedShowsModel } from '../components/featured_shows_model';
 
 @Component({
