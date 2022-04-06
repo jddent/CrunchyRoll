@@ -28,6 +28,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { SignInLayoutComponent } from './components/sign-in-layout/sign-in-layout.component';
 import { AddFeaturedShowsComponent } from './add-featured-shows/add-featured-shows.component';
 import { FormsModule } from '@angular/forms';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { FormsModule } from '@angular/forms';
     NewsSearchBar,
     UserInfoComponent,
     SignInLayoutComponent,
-    AddFeaturedShowsComponent
+    AddFeaturedShowsComponent,
+    AuthenticationComponent
 
   ],
   imports: [
