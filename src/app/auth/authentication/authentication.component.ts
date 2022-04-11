@@ -16,7 +16,7 @@ export class AuthenticationComponent implements OnInit {
   
   onSubmit(data:NgForm){
     console.log("button clicked");
-    console.log(data);
+    console.log(data.value);
    
 
     this.auth.signup(data.value.email, data.value.password).subscribe(
