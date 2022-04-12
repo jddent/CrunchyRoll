@@ -3,6 +3,7 @@ Main Features:
 - Adjusted authentication.component.html to take in user email and password and connect it to the firebase.
 
 Bonus Features:
+- Set up authentication page to allow for user to signin on authentication.component
 - Added 5 unit tests
     - featuredshows.component.spec.ts 
         - Tests to make sure the featuredshows.component can be Created.
