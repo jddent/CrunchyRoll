@@ -23,4 +23,6 @@ export class AuthenticationService{
         return this.http.post(this.baseUrl + ":" + this.signUpEndpoint + "?" + 
             "key=" + environment.firebase.apiKey, requestBody)
     }
+
+    
 }
