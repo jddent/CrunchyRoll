@@ -8,7 +8,7 @@ import { environment } from "src/environments/environment";
 export class AuthenticationService{
     baseUrl:string="https://identitytoolkit.googleapis.com/v1/accounts";
     signUpEndpoint:string = "signUp";
-
+    signInEndpoint:string = "signInWithPassword"
     public constructor(private http:HttpClient){
 
     }
@@ -23,6 +23,18 @@ export class AuthenticationService{
         return this.http.post(this.baseUrl + ":" + this.signUpEndpoint + "?" + 
             "key=" + environment.firebase.apiKey, requestBody)
     }
+
+    public signin(email:string, password:string){
+        const requestBody ={
+            "email":email,
+            "password":password,
+            "returnSecureToken":true
+        };
+
+        return this.http.post(this.baseUrl + ":" + this.signInEndpoint + "?" + 
+            "key=" + environment.firebase.apiKey, requestBody)
+    }
+
 
     
 }
