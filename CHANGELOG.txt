@@ -1,20 +1,22 @@
 Main Features:
-- Set up an admin page for featured shows called add-featured-shows.
-- Added routing to the admin page on app-routing.module.ts
-- Created a form layout on add-featured-shows.component.html.
-- Added the addShow method on add-featured-shows.component.ts.
-- Enabled the backend to receive information from addShow method in add-featured-shows.component.ts
-- Added the FeatruedShowsModel to the add-featured-shows.component.ts so that the the html can grab the information necessary from the moodel.
-- Added all of the ngModel commands to the form to enable information to be sent to the backend.
+- Set up authentication page to allow for user signup called authentication.component.html
+- Adjusted authentication.component.html to take in user email and password and connect it to the firebase.
 
 Bonus Features:
-- Added a form layout to sign-in-layout.
-- Created a form for create an account on sign-in-layout.component.html.
-- Created a form for login to an account on sign-in-layout.component.html.
-- Created accountinfo in the firebase realtime database to accept account information.
-- Created a create_account_model.ts.
-- Created a create_account.service.ts.
-- Added the service and model to the sign-in-layout component. 
-- Sign-in-layout component can now take information from the form and store it into the backend.
+- Added 5 unit tests
+    - featuredshows.component.spec.ts 
+        - Tests to make sure the featuredshows.component can be Created.
+        - Tests for input in the loop to take in data for a title and number of episodes.
+    -display-different-shows.component.spec.ts
+        - Tests to make sure display different shows component can be created.
+        - Tests for input in the title ensuring it can display the title.
+    - horizontalcard1.component.spec.ts
+        - Tests to make sure the horizontalcard1.component can be created.
+        - Tests for input for author name.
+    - horizontalcard3.component.spec.ts
+        - Tests to make sure the horizontalcard3.component can be created.
+        - Tests for input for title name and description.
+    - carousel.component.spec.ts
+        - Tests to make sure the carousel.component can be created.
 
 
